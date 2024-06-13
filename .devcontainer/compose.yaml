@@ -1,0 +1,10 @@
+services:
+  dev:
+    container_name: julia-dev
+    image: julia:1.10.3-bullseye 
+    tty: true
+    volumes:
+      - ${PWD}/:/workspace
+      - /var/run/docker.sock:/var/run/docker.sock
+    environment:
+      - TZ=Asia/Tokyo

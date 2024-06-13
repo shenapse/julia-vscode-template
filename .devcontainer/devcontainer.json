@@ -1,0 +1,32 @@
+{
+    "name": "julia-dev",
+    "dockerComposeFile": "compose.yaml",
+    "service": "dev",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "Codeium.codeium",
+                "julialang.language-julia",
+                "ms-toolsai.jupyter"
+            ],
+            "settings": {
+                "julia.executablePath": "/usr/local/julia/bin/julia",
+                "julia.formatOnSave": true,
+                "editor.formatOnSave": true,
+                "julia.lint.typeparam": true,
+                "julia.lint.run": true,
+                "julia.lint.call": true,
+                "julia.lint.iter": true,
+                "julia.lint.constif": true,
+                "julia.lint.lazy": true,
+                "julia.lint.datadecl": true,
+                "julia.lint.useoffuncargs": true,
+                "julia.lint.nothingcomp": true,
+                "julia.lint.typing": true
+            }
+        },
+    },
+    "workspaceFolder": "/workspace",
+    // "postCreateCommand": 
+    // "postStartCommand": 
+}
